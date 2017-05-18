@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="custom_marcos_addons_view_account_position_form" model="ir.ui.view">
+            <field name="name">custom.marcos.addons.view.account.position.form</field>
+            <field name="model">account.fiscal.position</field>
+            <field name="inherit_id" ref="account.view_account_position_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="sale_fiscal_type"/>
+                </xpath>
+
+            </field>
+        </record>
+
+
+    </data>
+</openerp>
